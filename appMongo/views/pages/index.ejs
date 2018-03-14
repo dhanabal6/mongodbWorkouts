@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head %>
+</head>
+
+<body class="container">
+    <header>
+        <% include ../partials/header %>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <h1>Mongo DB CRUD Operations</h1>
+            <% console.log('heheeh') %>
+        </div>
+        <form class="form-group" method="POST" action='/'>
+            <label for="name">Name:</label>
+            <input type="text" name="name" class="form-control" 
+             />
+            <label for="name">UserName:</label>
+            <input type="text" name="username" class="form-control" 
+             />
+            <label for="name">PassWord:</label>
+            <input type="password" name="password" class="form-control" />
+            <label for="name">Location:</label>
+            <input type="text" name="location" class="form-control"  />
+            <br />
+            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="reset" class="btn btn-default">Reset</button>
+        </form>
+    </main>
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+</body>
+
+</html>

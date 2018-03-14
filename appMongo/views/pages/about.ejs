@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../partials/header %>
+</header>
+
+<main>
+<div class="row">
+    <div class="col-sm-8">    
+        <div class="jumbotron">
+            <h1>User Details</h1>
+            <table class="table">
+                <tr>
+                <th>Name</th>
+                <th>User Name</th>
+                <th>Location</th>
+                <th></th>
+                <th></th>
+            </tr>
+                <% for(var i=0; i<userlist.length; i++) {%>
+                   <% console.log(userlist[i].tasks) %>
+                <tr>
+                <td><%= userlist[i].name %></td>
+                <td><%= userlist[i].username %></td>
+             
+                <td><%= userlist[i].location %></td>
+                <td><a href='/<%= userlist[i]._id %>' >Edit</a></td>
+                <td><a href='/<%= userlist[i]._id %>/delete'>Delete</a></td>
+                </tr>
+                <% } %>
+            </table>
+        </div>
+    </div>
+
+    <div class="col-sm-4">        
+        <div class="well">
+            <h3>Location List!</h3>
+             <ul>
+                <% for(var i=0; i<userlist.length; i++) {%>
+                   <li><%= userlist[i].location %></li>
+                <% } %>
+        </ul>
+        </div>
+    </div>
+
+</div>
+</main>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+</body>
+</html>

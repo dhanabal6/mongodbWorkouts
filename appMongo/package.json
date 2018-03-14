@@ -1,0 +1,21 @@
+{
+  "name": "appMongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "joi": "node /joi_test.js",
+    "server": "nodemon /index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "joi": "^13.0.2",
+    "mongoose": "^4.13.6",
+    "nodemon": "^1.12.5"
+  }
+}

@@ -1,0 +1,15 @@
+Install MongoDB
+https://docs.mongodb.com/v3.2/tutorial/install-mongodb-on-ubuntu/
+Link::
+https://www.mongodb.com/
+http://mongoosejs.com/
+
+
+
+mlab connect Link
+https://mlab.com/home?newLogin=1
+
+
+Database
+  - collection ->(tabel) its contain document
+  - document -> table
